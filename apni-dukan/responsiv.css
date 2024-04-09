@@ -1,0 +1,187 @@
+@media only screen and (max-width:769px){
+    .nav1{
+        position: relative;
+        z-index: 2;
+        background-color: white;
+    }
+    .right i{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    .nav2{
+        width: 100%;
+        height: 80px;
+       
+    }
+    .nav2 .nav2-left i{
+        margin-left: 0px;
+    }
+    .nav2 .nav2-center h1{
+        
+        font-size: 1.5rem;
+        letter-spacing: 2px;  
+    }
+    .nav2 .nav2-center p{
+        color: grey;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .nav2 .nav2-right i{
+        margin: 0px 5px;
+    }
+    .nav3{
+        display: none;
+    }
+    .featured{
+        background-attachment: fixed;
+    }
+    .latest{
+        padding: 0px 50px;
+    }
+    .product-intro{
+        text-align: center;
+    }
+    .product-intro h1{
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .product-intro h1 span{
+        color: var(--secondary);
+    }
+    .product-intro p{
+        color: gray;
+        margin: 15px 0px;
+    }
+    .card-container{
+        
+        margin: 2rem 0;
+
+    }
+    .card-container .card{
+        flex-basis: 100%;
+        padding: 0.8rem;
+        position: relative;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+    .card i{
+        color: goldenrod;
+        margin: 10px 0px;
+    }
+    .card button{
+        color: white;
+        background-color: var(--secondary);
+        border: none;
+        outline: none;
+        margin-top: 15px;
+        padding: 5px 20px;
+    }
+    .trands{
+        padding: 20px 50px;
+        background-color: rgba(0,0,0,0.01);
+    }
+    .trends .swiper {
+        width: 100%;
+        padding: 50px;
+      }
+    
+      .trends .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 360px;
+      }
+    
+     .trends .swiper-slide img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      footer div{
+        flex-basis: 50%;
+        margin: 10px 0px;
+      }
+
+      #sidenav{
+        display: block;
+      }
+      #menubar{
+        display: block;
+        position:absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: white;
+        font-size: 2rem;
+        padding: 20px 10px;
+        animation: animate 5s ease infinite;
+      }
+      @keyframes animate {
+        0%{
+            background-color: var(--secondary);
+        }
+        100%{
+            background-color: var(--primary);
+        }
+      }
+      #sidenav{
+        width: 0px;
+        height: 100vh;
+         
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: var(--light);
+        padding-top: 70px;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    #sidenav ul{
+        list-style: none;
+        
+    }
+    #sidenav ul li{
+        display: block;
+        width: 200px;
+        position: relative;
+        z-index: 99;
+        margin: 10xp 20px;
+    }
+    #sidenav ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    #sidenav ul li a:hover{
+        color: var(--primary);
+    }
+    #sidenav ul li i{
+        color:white;
+        margin: 0px 5px;
+    }
+    #sidenav  ul ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: none;
+    }
+    #sidenav  ul ul li{
+        
+        border-bottom: 1px solid  white;
+    }
+    #sidenav  ul li:hover>ul{
+        display: block;
+    }
+}
